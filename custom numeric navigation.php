@@ -68,7 +68,7 @@ pagination loop
 							</div>
 						</div>
 						<?php   endwhile; ?>
-						<?php wpbeginner_numeric_posts_nav(); ?>	// pagination function call
+						<?php custom_numeric_posts_nav(); ?>	// pagination function call
 						
 				<?php endif;  ?>
 
@@ -80,7 +80,7 @@ Add this in function.php in ur theme
 <?php
 
 										//pagination
-function wpbeginner_numeric_posts_nav() {
+function custom_numeric_posts_nav() {
 
 	if( is_singular() )
 		return;
